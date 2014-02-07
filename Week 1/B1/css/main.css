@@ -1,0 +1,180 @@
+/*Main Body*/
+body {
+background: url('../images/PageBG.jpg')no-repeat center center fixed #000000;
+background-size: cover;
+}
+/*Margin from the top and left and right*/
+#wrapper {
+margin: 60px auto 20px auto;
+float:right;
+width:75%;
+}
+/*-- element --*/
+nav {
+clear: both;
+background: #000;
+color: #fff;
+width: 550px;
+height: 10px;
+padding: 10px;
+border: 3px solid #fff;
+margin: 0px 0px 30px 0px;
+}	
+/*-- descendant --*/
+nav ul {
+margin: -5px 0px 0px 0px;
+}
+
+nav li {
+display: inline;
+}
+/*-- combinator --*/
+nav a {
+color: #fff;
+font-size: 8pt;
+}
+/*-- pseudo-classes --*/
+nav li a:hover, li a:visited {
+color: #ff0000;
+}
+ 
+li {
+border-right: 1px solid #fff;
+padding: 0px 15px 0px 10px;
+}	
+/*-- pseudo-elements --*/
+li:last-child {
+border-right: none;
+}
+
+
+/*Font Size and Type*/	
+* {	
+font-family: "Times New Roman";
+font-size: 14pt;
+}
+/*-- sibling selector --*/
+h1 ~ p {
+font-size: 10pt;
+}	
+/*-- child selector --*/
+div > h1, header > h1, section > h1 {
+font-size: 45pt;
+}
+h1 {
+width: 550px;
+color: #fff;
+margin: 0px 0px 0px 0px;
+text-align: center;
+}	
+/*-- nth-child selector --*/
+h1:nth-child(1n+2) {
+padding: 10px;
+background: #000;
+color: #ffff00;
+}
+h2 {
+font-size: 12pt;
+margin-top: -1px;
+text-align: center;
+}	
+/*-- negation pseudo-class selector --*/
+img:not([alt*="MLG"]) {
+width: 168px;
+border: 2px solid #000;
+padding: 0px;
+}	
+
+
+a {
+text-decoration: underline;
+}	
+/*-about-*/
+#about {
+background-color: #000;
+color: #fff;
+width: 550px;
+height: 200px;
+border: 1px solid #fff;
+padding: 10px;
+margin: 0px 0px 20px 0px;
+text-align: left;
+}
+/*-contains attribute for the sections-*/
+section[id*="section"] {
+background-color: #000;
+color: #fff;
+width: 550px;
+height: 200px;
+border: 1px solid #fff;
+padding: 10px;
+}	
+#gamesection p, #moviesection p, #tvshowsection p, #webcastsection p  {
+font-size: 8pt;
+text-align: left;
+}	
+/*-- ends with attribute for jpg and png pictures--*/
+img[src$=".jpg"] {
+width: 150px;
+height: 150px;
+padding-right: 10px;
+float: left;
+}
+img[src$=".png"] {
+width: 150px;
+height: 150px;
+padding-right: 10px;
+float: left;
+}	
+/*-- multiple for the columns--*/
+.col1 {
+width: 275px;
+padding: 0px 5px 0px 5px;
+float: left;
+}	
+
+.col2 {
+width: 232px;
+border-left: 1px solid #fff;
+padding: 0px 5px 0px 5px;
+float: left;
+}
+/*-- title attribute --*/
+a[title=about] {
+font-size: 8pt;
+color: #fff;
+}	
+
+a[title=about]:hover {
+color: #ffff00;
+}	
+
+a[title=about]:visited {
+color: #ff0000;
+}	
+/*-- begins with attribute for the hyperlinks--*/
+a[href^="https:"], a[href^="http:"] {
+font-size: 8pt;
+color: #fff;
+}	
+
+a[href^="https:"]:hover , a[href^="http:"]:hover {
+color: #ffff00;
+}	
+
+a[href^="http:"]:visited, a[href^="http:"]:visited {
+color: #ff0000;
+}	
+
+/*-- footer --*/
+
+footer {
+color: #fff;
+padding: 5px;
+margin: 40px auto 0px auto;
+text-align: center;
+}
+
+footer p {
+font-size: 6pt;
+}	
