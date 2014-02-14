@@ -1,0 +1,182 @@
+/*Main Body*/
+body {
+background: url('../images/PageBG.jpg')no-repeat center center fixed #000000;
+background-size: cover;
+	-webkit-background-size: cover;
+   -moz-background-size: cover;
+  -o-background-size: cover;
+   background-size: cover;
+}
+
+/*Font Size and Type*/	
+* {	
+font-family: "Times New Roman";
+font-size: 100%;
+}
+/*-- sibling selector --*/
+h1 ~ p {
+font-size: 1em;
+}	
+/*-- child selector --*/
+div > h1, header > h1, section > h1 {
+font-size: 2.5em;
+}
+h1 {
+width: 550px;
+color: #fff;
+margin: 0 auto;
+text-align: center;
+}	
+/*-- nth-child selector --*/
+h1:nth-child(1n+2) {
+padding: 2%;
+background: #000;
+color: #ffff00;
+width: 60%;
+}
+h2 {
+font-size: 1.5em;
+margin-top: -1px;
+text-align: center;
+}	
+/*-- negation pseudo-class selector --*/
+img:not([alt*="MLG"]) {
+width: 60%;
+border: 2px solid #000;
+padding: 0px;
+}	
+
+
+a {
+text-decoration: underline;
+}	
+/*-about-*/
+section[id*="about"] {
+    background-color: #000;
+    border: 1px solid #FFFFFF;
+    color: #7D7D7D;
+    margin: 0 0 5% 1%;
+    padding: 2%;
+    text-align: left;
+}
+
+/*-contains attribute for the sections-*/
+section[id*="section"] {
+background-color: #000;
+color: #7D7D7D;
+width: 60%;
+/*height: 200px;*/
+border: 1px solid #fff;
+padding: 2%;
+}	
+
+#gamesection p, #moviesection p, #tvshowsection p, #webcastsection p  {
+font-size: 1 em;
+text-align: left;
+}	
+
+/*-- ends with attribute for jpg and png pictures--*/
+img[src$=".jpg"] {
+width: 15%;
+height: 15%;
+margin-right: 2%;
+/*padding-right: 10px; */
+float: left;
+}
+
+img[src$=".png"] {
+width: 15%;
+height: 15%;
+margin-right: 2%;
+/*padding-right: 10px; */
+float: left;
+}	
+/*-- multiple for the columns--*/
+.col1 {
+border-right: 1px solid #FFFFFF;
+    float: left;
+    padding: 0 5%;
+}	
+
+.col2 {
+	float: left;
+    padding: 0 1%;
+}
+	
+
+/*-- footer --*/
+
+footer {
+color: #fff;
+padding: 1%;
+margin: 0 auto 0 auto;
+text-align: center;
+}
+
+footer p {
+font-size: .5em;
+}	
+
+/*--media queries --*/
+/* Desktops and laptops ----------- */
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  #wrapper {
+    width: 90%;
+    min-width: 0;
+  }
+}
+
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	#wrapper {
+    width: 45%;
+	}
+   h1{
+	   font-size: 24px;
+   }
+   #footer{
+	   display:none;
+}
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+#wrapper {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+/* image section ------*/
+div.img
+  {
+  margin:5px;
+  padding: 5px;
+  border:1px solid #0000ff;
+  height:auto;
+  width:auto;
+  float:left;
+  text-align:center;
+  }
+div.img img
+  {
+  display:inline;
+  margin:5px;
+  border:1px solid #ffffff;
+  }
+div.img a:hover img
+  {
+  border:1px solid #0000ff;
+  }
+div.desc
+  {
+  text-align:center;
+  font-weight:normal;
+  width:120px;
+  margin:5px;
+  }
