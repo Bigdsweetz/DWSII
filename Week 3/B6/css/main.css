@@ -1,0 +1,254 @@
+/*Main Body with Margin included*/
+body {
+	width 100%
+	margin: 0 auto;
+	padding: 0;
+background: url('../images/PageBG.jpg')no-repeat center center fixed #000000;
+background-size: cover;
+	-webkit-background-size: cover;
+   -moz-background-size: cover;
+  -o-background-size: cover;
+   background-size: cover;
+}
+/*The container */
+
+.container{
+width: 90%;
+margin: 0 auto;
+padding: 0;
+background: #fff;
+}
+
+/*-- element --*/
+nav {
+clear: both;
+background: #000;
+color: #fff;
+width: 60%
+border: 3px solid #fff;
+margin: 0 0 5% 0;
+}	
+
+/*-- descendant --*/
+nav ul {
+	margin: 0 auto 0 auto;
+	padding: 0 3% 0 3%;
+}
+
+nav li {
+	display: inline;
+	margin-right: -4%;
+}
+/*-- combinator --*/
+nav a {
+color: #fff;
+font-size: 1.5em;
+}
+/*-- pseudo-classes --*/
+nav li a:hover, li a:visited {
+color: #ff0000;
+}
+ 
+li {
+border-right: 1px solid #fff;
+padding: 0 2% 0 5%;
+}	
+/*-- pseudo-elements --*/
+li:last-child {
+border-right: none;
+}
+
+
+/*Font Size and Type*/	
+* {	
+font-family: "Times New Roman";
+font-size: 100%;
+}
+/*-- sibling selector --*/
+h1 ~ p {
+font-size: 1em;
+}	
+/*-- child selector --*/
+div > h1, header > h1, section > h1 {
+font-size: 2.5em;
+}
+h1 {
+width: 550px;
+color: #fff;
+margin: 0 auto;
+text-align: center;
+}	
+/*-- nth-child selector --*/
+h1:nth-child(1n+2) {
+padding: 2%;
+background: #000;
+color: #ffff00;
+width: 60%;
+}
+h2 {
+font-size: 1.5em;
+margin-top: -1px;
+text-align: center;
+}	
+/*-- negation pseudo-class selector 
+img:not([alt*="MLG"]) {
+width: 60%;
+border: 2px solid #000;
+padding: 0px;
+}	
+--*/
+
+a {
+text-decoration: underline;
+}	
+/*-about-*/
+#about {
+background-color: #000;
+color: #fff;
+width: 55%;
+height: 100px;
+border: 1px solid #fff;
+padding: 2%;
+margin: 0px 0px 20px 0px;
+text-align: left;
+}
+
+/*-- multiple for the columns--*/
+
+.feature{
+position: relative;
+background: #fff;
+border: 3px solid #c4b96c;
+
+}
+div#container{
+	positions:relative
+	width: 750px;
+	height: 500px;
+	margin: 0 auto;
+	padding: 0;
+	background: #fff;
+}
+
+div#1{
+	position:absolute;
+	top: 0;
+	left: 0;
+	flaot: left;
+	width:220px;
+	padding: 15px;
+}
+
+div#2{
+	position:fixed;
+	top: 0;
+	left: 250px;
+	flaot: left;
+	width:220px;
+	padding: 15px;
+	z-index: 1;
+}
+
+div#3{
+	position:absolute;
+	top: 0;
+	left: 500;
+	flaot: left;
+	width:220px;
+	padding: 15px;
+	z-index: 2;
+}
+
+/*-- ends with attribute for jpg and png pictures--*/
+img[src$=".jpg"] {
+width: 15%;
+height: 15%;
+margin-right: 2%;
+/*padding-right: 10px; */
+float: left;
+}
+img[src$=".png"] {
+width: 15%;
+height: 15%;
+margin-right: 2%;
+/*padding-right: 10px; */
+float: left;
+}	
+
+
+
+/*-- title attribute --*/
+a[title=about] {
+font-size: 1.5em;
+color: #fff;
+}	
+
+a[title=about]:hover {
+color: #ffff00;
+}	
+
+a[title=about]:visited {
+color: #ff0000;
+}	
+/*-- begins with attribute for the hyperlinks--*/
+a[href^="https:"], a[href^="http:"] {
+font-size: 1em;
+color: #fff;
+}	
+
+a[href^="https:"]:hover , a[href^="http:"]:hover {
+color: #ffff00;
+}	
+
+a[href^="http:"]:visited, a[href^="http:"]:visited {
+color: #ff0000;
+}
+	
+
+/*-- footer --*/
+
+footer {
+color: #fff;
+padding: 1%;
+margin: 0 auto 0 auto;
+text-align: center;
+}
+
+footer p {
+font-size: .5em;
+}	
+
+/*--media queries --*/
+/* Desktops and laptops ----------- */
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  #wrapper {
+    width: 90%;
+    min-width: 0;
+  }
+}
+
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	#wrapper {
+    width: 45%;
+	}
+   h1{
+	   font-size: 24px;
+   }
+   #footer{
+	   display:none;
+}
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+#wrapper {
+    width: 100%;
+    min-width: 0;
+  }
+}

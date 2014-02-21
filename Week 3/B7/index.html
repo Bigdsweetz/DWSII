@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>	
+<title>DWS 2 B6 Homework</title>	
+<link rel="stylesheet" href="css/main.css" />	
+</head>
+<body>
+    <div class="heading">
+      <h1><i>Would you like to take a survey</i></h1>
+    </div>
+
+    <div class="container">
+     <form>
+      <fieldset>
+        <h3><i>1. Personal Information</i></h3>
+        <label for="first-name">First Name</label><br/>
+        <input type="text" name="first-name" placeholder="Enter your first name" required /><br/>
+        <label for="last-name">Last Name</label><br/>
+        <input type="text" name="last-name" placeholder="Enter your last name" required /><br/>
+        <label for="birthday">Date of Birth</label><br/>
+        <input type="text" name="birthday" placeholder="e.g. 11/10/1775" required /><br/>
+        <label for="email">Email</label><br/>
+        <input type="email" name="email" placeholder="totally fake@gizoogle.com" required /><br/>
+        <label for="gender">Select your gender:</label><br/>
+        <input type="radio" name="gender" value="male"required />Male
+        <input type="radio" name="gender" value="female"required />Female
+        <input type="radio" name="gender" value="Transgender"required />Transgender
+        <input type="radio" name="gender" value="no answer"required />no answer<br/>
+        <label for="colors">Country of Origin</label><br/>
+        <select name="colors">
+          <option value="North America">North America</option>
+          <option value="South America">South America</option>
+          <option value="Europe">Europe</option>
+          <option value="Russia">Russia</option>
+          <option value="Germany">Germany</option>
+          <option value="Canada">Canada</option>
+          <option value="Japan">Japan</option>
+          <option value="Space">Space</option>
+        </select><br/>
+        
+      </fieldset>
+        
+      <fieldset>
+        <h3><i>2. Contact Information</i></h3>
+        <label for="address">Street Address</label><br/>
+        <input type="text" name="address" placeholder="Enter your address" required /><br/>
+        <label for="address2">Second line</label><br/>
+        <input type="text" name="address2" placeholder="if needed" /><br/>
+        <label for="city">City</label><br/>
+        <input type="text" name="city" /><br/>
+        <label for="state">State/Province</label><br/>
+        <input type="text" name="state"/><br/>
+        <label for="zipcode">Zip/Postal</label><br/>
+        <input type="text" name="zipcode" required /><br/>
+        <label for="phone">Phone</label><br/>
+        <input type="text" name="phone" placeholder="e.g. 555-555-5555" required /><br/>
+        <label for="start">Date moved in</label><br/>
+        <input type="date" name="start"><br/>
+        <label for="time">Time at current location</label><br/>
+        <select name="time">
+          <option value="less than a month">Less than a month</option>
+          <option value="3 months">3 months</option>
+          <option value="6 months">6 months</option>
+          <option value="1 year">1 year</option>
+          <option value="over 2 years">Over 2 years</option>
+          <option value="over 5 years">Over 5 years</option>
+        </select><br/>
+      </fieldset>
+
+      <fieldset>
+        <h3><i>3. Hobbies</i></h3>
+        <label for="Hobbies">Place you would love to go</label><br/>
+        <input type="text" name="location" placeholder="Surfing in Hawaii" required /><br/>
+         <label for="textarea2">Anything else you'd like to tell us?</label></br><textarea maxlength="30">
+        </textarea></br></br>
+
+        <button id="submit">Submit Form</button>
+      </fieldset>
+     </form>
+    </div> 
+
+<footer>
+<p>&copy;The Opinion Point 2014</p>
+</footer>	
+</div>	 
+</body>
+</html>	
