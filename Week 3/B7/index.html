@@ -3,7 +3,18 @@
 <head>
 <meta charset="utf-8"/>	
 <title>DWS 2 B6 Homework</title>	
-<link rel="stylesheet" href="css/main.css" />	
+
+<link rel="stylesheet" href="css/main.css" />
+<link href="css/ui-lightness/jquery-ui-1.10.4.custom.css" rel="stylesheet">
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="js/jquery-ui-1.10.4.custom.js"></script>
+	
+	 <script>
+$(function() {
+$( "#datepicker" ).datepicker();
+});
+</script>
+
 </head>
 <body>
     <div class="heading">
@@ -54,9 +65,9 @@
         <label for="zipcode">Zip/Postal</label><br/>
         <input type="text" name="zipcode" required /><br/>
         <label for="phone">Phone</label><br/>
-        <input type="text" name="phone" placeholder="e.g. 555-555-5555" required /><br/>
+        <input type="text" name="phone" placeholder="e.g. 555-867-5309" required /><br/>
         <label for="start">Date moved in</label><br/>
-        <input type="date" name="start"><br/>
+        <input type="text" id="datepicker"></p><br/>
         <label for="time">Time at current location</label><br/>
         <select name="time">
           <option value="less than a month">Less than a month</option>
